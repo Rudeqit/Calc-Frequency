@@ -22,11 +22,13 @@ uint32_t calc_word(char *string);
 
 char *buffer_init(FILE* in, uint32_t b_size);
 
-void write_files(const char *out_file_name, uint32_t words_num, word *box);
+int write_files(const char *out_file_name, uint32_t words_num, word *box);
 
 char *open_files(const char *in_file_name);
 
-void filling_box(word *box, char *buffer, uint32_t words_num);
+void sort_box(word *box, uint32_t box_count);
+
+void filling_box(word *box, char *buffer);
 
 int process(const char *in_file_name, const char *out_file_name);
 

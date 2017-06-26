@@ -2,7 +2,7 @@
 
 void print_usage()
 {
-	printf("Usage:\n"
+	printf("Используйте следующую форму:\n"
 		"./calcFrequency <in-file-name> <out-file-name>\n");
 }
 
